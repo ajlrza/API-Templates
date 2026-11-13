@@ -11,13 +11,15 @@ A lightweight Python key-value storage layer built on LMDB that provides fast, p
 
 Tech Stack
 
-Language: Python
+Language: ```Python```
 
-Database: LMDB (Lightning Memory-Mapped Database)
+Database: ```LMDB (Lightning Memory-Mapped Database```
 
-Serialization: orjson, dataclasses (asdict)
+Serialization: ```orjson, dataclasses (asdict)```
 
-Features: Big-endian byte key encoding, auto-generated index tagging, cursor-based batch reads (getmulti), threaded I/O helper
+Features: ```Big-endian byte key encoding, auto-generated index tagging, cursor-based batch reads (getmulti), threaded I/O helper```
+
+Use case: ```AI Applications, Read-Heavy Applications, ML Training```
 
 # Waitlister API Script
 A lightweight TypeScript backend built with the Hono web framework that manages product waitlist signups and incentivizes sharing through a built-in referral system. It assigns each subscriber a custom referral link, tracks successful referrals, and calculates real-time leaderboard queue rankings.
@@ -31,3 +33,4 @@ Database & ORM: ```PostgreSQL, Drizzle ORM, postgres-js driver```
 
 Features: ```Base62 encoding/decoding, SQL window functions, custom middleware rate limiting```
 
+Use case: ```Start-up waitlisting page```
