@@ -3,7 +3,7 @@
 > These were part of my previous projects that I didn't decide to continue, my intention is that they can be re-used for your projects.
 
 * Waitlister API in TypeScript
-* Key-Value Database in Python via LMDB
+* Key-Val DB API in Python with LMDB
 
 # Custom LMDB Script
 
