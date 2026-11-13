@@ -1,4 +1,6 @@
-# Collection of Usable Backend Scripts as Templates
+# Backend Template Scripts
+
+> These were part of my previous projects that I didn't decide to continue, my intention is that they can be re-used for your projects.
 
 * Waitlister API in TypeScript
 * Key-Value Database in Python via LMDB
@@ -17,7 +19,7 @@ Serialization: orjson, dataclasses (asdict)
 
 Features: Big-endian byte key encoding, auto-generated index tagging, cursor-based batch reads (getmulti), threaded I/O helper
 
-# Waitlister API
+# Waitlister API Script
 A lightweight TypeScript backend built with the Hono web framework that manages product waitlist signups and incentivizes sharing through a built-in referral system. It assigns each subscriber a custom referral link, tracks successful referrals, and calculates real-time leaderboard queue rankings.
 
 # Tech Stack
