@@ -1,4 +1,4 @@
-# Backend Template Scripts
+# API Template Scripts
 
 > These were part of my previous projects that I didn't decide to continue, my intention is that they can be re-used for your projects.
 
