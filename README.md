@@ -4,6 +4,7 @@
 
 * Waitlister API in TypeScript
 * Key-Val DB API in Python with LMDB
+* State Queue in Python with asyncio
 
 # Custom LMDB Script
 
@@ -34,3 +35,19 @@ Database & ORM: ```PostgreSQL, Drizzle ORM, postgres-js driver```
 Features: ```Base62 encoding/decoding, SQL window functions, custom middleware rate limiting```
 
 Use case: ```Start-up waitlisting page```
+
+# State Queue Script
+
+A lightweight Python state-management layer that buffers application state through an async queue and routes it into named, prioritized partitions. It separates state into main (observed), background (unobserved) and miscellaneous channels, persists each partition to a file-based partition pool, and tracks active partitions through a central manager. It also detects the host's CPU core count to set a processing level and includes a monitor that drains the buffer and reports any state left uncleared.
+
+# Tech Stack
+
+Language: Python
+
+Concurrency: asyncio (bounded asyncio.Queue), multiprocessing
+
+Storage: File-based partition pool
+
+Features: Bounded hypervisor buffer (max 100), priority-tagged partitions (HIGH / MEDIUM / LOW) with UP / DOWN status, observed / unobserved / misc state channels, CPU core-level detection, buffer-drain monitor
+
+Use case: Game & App State Syncing, Background Job Queues, Event / Telemetry Buffering
