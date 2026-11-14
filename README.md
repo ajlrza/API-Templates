@@ -1,4 +1,4 @@
-# API Template Scripts
+# Backend API templates in TypeScript and Python
 
 > These were part of my previous projects that I didn't decide to continue, my intention is that they can be re-used for your projects.
 
